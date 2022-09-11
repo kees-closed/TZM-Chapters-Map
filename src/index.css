@@ -1,0 +1,88 @@
+@font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        src: url(Raleway-Regular.woff2) format('woff2');
+}
+
+@font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        src: url(Poppins-Regular.woff2) format('woff2');
+}
+
+html {
+        box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+        box-sizing: inherit;
+}
+
+html,
+body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+}
+
+#mapid {
+        height: 100%;
+        width: 100%;
+}
+
+.leaflet-container {
+        font-size: 20px;
+        font-family: 'Poppins', Helvetica;
+        text-transform: uppercase;
+}
+
+.leaflet-container a {
+        color: #2F70AC;
+        text-decoration-line: none;
+}
+
+.leaflet-bar a {
+        color: #006699;
+}
+
+.leaflet-control-layers-list {
+        margin-bottom: 0;
+}
+
+.leaflet-control-layers-selector {
+        vertical-align: middle;
+}
+
+.embed-popup .leaflet-popup-tip {
+        width: 0;
+        height: 0;
+}
+
+.shopinfo {
+        font-size: 16px;
+        font-family: 'Raleway', Helvetica;
+        text-transform: none;
+        margin-bottom: 10px;
+}
+
+li {
+        padding-left: 5px;
+}
+
+input[type='checkbox'] {
+        height: 25px;
+        width: 25px;
+}
+
+.easy-button-button {
+        padding: 0;
+}
+
+textarea {
+        resize: none;
+}
