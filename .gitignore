@@ -1,4 +1,3 @@
 *.swp
-dist/*
 node_modules
 src/current_chapters.json
