@@ -3,7 +3,8 @@ const json5 = require('json5');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'development', // stops minifying code
+  //devtool: "none", // to disable eval code in the output
   entry: {
     index: './src/index.js',
   },
@@ -24,14 +25,14 @@ module.exports = {
       hash: true,
       title: 'TZM Chapters',
       mapId: 'map',
-        'meta': {
-          'Content-Security-Policy': { 'http-equiv': 'Content-Security-Policy', 'content': 'default-src https:' },
-          // Will generate: <meta http-equiv="Content-Security-Policy" content="default-src https:">
-          // Which equals to the following http header: `Content-Security-Policy: default-src https:`
-          'set-cookie': { 'http-equiv': 'set-cookie', content: 'name=value; expires=date; path=url' },
-          // Will generate: <meta http-equiv="set-cookie" content="value; expires=date; path=url">
-          // Which equals to the following http header: `set-cookie: value; expires=date; path=url`
-        }
+        //'meta': {
+        //  'Content-Security-Policy': { 'http-equiv': 'Content-Security-Policy', 'content': 'default-src https:' },
+        //  // Will generate: <meta http-equiv="Content-Security-Policy" content="default-src https:">
+        //  // Which equals to the following http header: `Content-Security-Policy: default-src https:`
+        //  'set-cookie': { 'http-equiv': 'set-cookie', content: 'name=value; expires=date; path=url' },
+        //  // Will generate: <meta http-equiv="set-cookie" content="value; expires=date; path=url">
+        //  // Which equals to the following http header: `set-cookie: value; expires=date; path=url`
+        //}
     }),
   ],
   module: {
