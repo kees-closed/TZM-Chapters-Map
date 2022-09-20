@@ -2,7 +2,7 @@ import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 import "leaflet-fullscreen/dist/leaflet.fullscreen.css";
-//import "./index.css";
+import "./index.css";
 import L from "leaflet";
 //import MarkerClusterGroup from 'leaflet.markercluster';
 //import subGroup from 'leaflet.featuregroup.subgroup';
@@ -17,16 +17,20 @@ import json from './current_chapters.json';
 //   } 
 //   document.body.appendChild(component()); 
 
-export default function drawMap() {
-  var map = L.map('map').setView([51.505, -0.09], 13);
-  
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '© OpenStreetMap'
-  }).addTo(map);
-}
+//export default function drawMap() {
+//  var map = L.map('map').setView([51.505, -0.09], 13);
+//
+//  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//        maxZoom: 19,
+//        attribution: '© OpenStreetMap'
+//  }).addTo(map);
+//}
 
-
+var map = L.map('map').setView([51.505, -0.09], 13);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+}).addTo(map);
 
 
 
